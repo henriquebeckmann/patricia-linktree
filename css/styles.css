@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e4d9d3;
+  font-size: 1.6rem;
+  margin: auto;
+}
+
+.wrapper {
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 35rem;
+  margin: 0;
+  display: block;
+}
+
+.container {
+  position: relative;
+  top: -2rem;
+  margin-left: 4rem;
+}
+
+.blob {
+  -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjQ4LCAxMTcsIDU1LCAxKSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN0b3AgaWQ9InN0b3AyIiBzdG9wLWNvbG9yPSJyZ2JhKDI1MSwgMTY4LCAzMSwgMSkiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgICAgICAgICAgIDwvZGVmcz4KICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9InVybCgjc3ctZ3JhZGllbnQpIiBkPSJNMjUuMiwtMzFDMzAuNSwtMjUuNywzMS4xLC0xNS42LDMzLC01LjdDMzQuOSw0LjIsMzguMSwxNCwzNS41LDIyLjRDMzIuOSwzMC43LDI0LjUsMzcuNSwxNS4yLDQwLjRDNS44LDQzLjMsLTQuNiw0Mi4xLC0xMy4yLDM4LjFDLTIxLjgsMzQuMSwtMjguNiwyNy4zLC0zMy41LDE5LjJDLTM4LjQsMTEsLTQxLjQsMS42LC0zOS44LC02LjlDLTM4LjIsLTE1LjQsLTMxLjksLTIzLC0yNC41LC0yNy45Qy0xNy4xLC0zMi45LC04LjUsLTM1LjIsMC43LC0zNi4xQzEwLC0zNywyMCwtMzYuMywyNS4yLC0zMVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwczsiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
+  -webkit-mask-repeat: no-repeat;
+}
+
+.blob img {
+  position: relative;
+  top: 2.5rem;
+  width: 83%;
+}
+
+.name {
+  position: relative;
+  top: -3rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  font-weight: 200;
+  width: 100%;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.vocation {
+  position: relative;
+  top: -3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.9rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 0.1rem;
+  padding-left: 3.3rem;
+
+}
+
+.linktree button {
+  position: relative;
+  top: -3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+  background-color: #689B9D;
+  color: #fff;
+  height: 5.7rem;
+  width: 80%;
+  margin-inline: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 6rem;
+  gap: 1rem;
+}
+
+.linktree button:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 425px) {
+  .wrapper {
+    margin: auto;
+  }
+}
