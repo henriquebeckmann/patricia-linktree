@@ -79,10 +79,16 @@ body {
   align-items: center;
   padding-left: 6rem;
   gap: 1rem;
+  transition: 0.2s;
 }
 
 .linktree button:last-child {
   margin-bottom: 0;
+}
+
+.linktree button:hover {
+  background-color: #468f92;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 425px) {
