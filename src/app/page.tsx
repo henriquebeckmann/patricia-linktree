@@ -22,7 +22,7 @@ useEffect(() => {
 
   return (
     <div className="container mx-auto bg-[#F2EFEA] max-w-xl min-h-screen flex flex-col items-center justify-center">
-      <div className="reveal flex flex-col items-center mt-12 md:mt-0" ref={revealRef}>
+      <div className="reveal flex flex-col items-center -mt-14" ref={revealRef}>
       <div className="w-52 h-52 rounded-full border-4 border-[#DEBFAA] overflow-hidden mb-1">
         <Image
           width={500}

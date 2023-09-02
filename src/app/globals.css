@@ -22,25 +22,22 @@ p {
     font-family: 'Logam';
 }
 
-@keyframes slideUpFadeIn {
+@keyframes FadeIn {
   0% {
-    transform: translateY(100%);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .reveal {
   opacity: 0;
-  transform: translateY(100%);
 }
 
 .reveal.active {
-  animation: slideUpFadeIn 500ms forwards;
+  animation: FadeIn 500ms forwards;
 }
