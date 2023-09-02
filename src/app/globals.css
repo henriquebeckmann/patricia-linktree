@@ -23,12 +23,6 @@ p {
 }
 
 @keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
   100% {
     opacity: 1;
   }
@@ -36,8 +30,5 @@ p {
 
 .reveal {
   opacity: 0;
-}
-
-.reveal.active {
-  animation: FadeIn 500ms forwards;
+  animation: FadeIn 700ms forwards;
 }

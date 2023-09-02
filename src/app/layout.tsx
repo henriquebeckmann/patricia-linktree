@@ -1,14 +1,17 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Literata } from 'next/font/google'
+import { Questrial } from 'next/font/google'
 
-const inter = Literata({ subsets: ['latin'] })
+const questrial = Questrial({
+  weight: '400',
+  subsets: ['latin'],
+  })
 
 export const metadata: Metadata = {
   title: 'Patrícia Beckmann Dentista',
   description: 'Link central para Dra. Patricia Beckmann, \
   dentista especializada em endodontia e estética dental. \
-  Encontre aqui meus locais de atendimento e gende sua consulta!',
+  Encontre aqui meus locais de atendimento e agende sua consulta!',
 }
 
 export default function RootLayout({
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-slate-200 overflow-hidden`}>{children}</body>
+      <body className={`${questrial.className} bg-slate-200 overflow-hidden`}>{children}</body>
     </html>
   )
 }
