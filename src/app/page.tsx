@@ -4,19 +4,21 @@ import Image from 'next/image';
 import { UilWhatsapp, UilMapMarker, UilStore } from '@iconscout/react-unicons'
 
 export default function Home() {
-  const revealRef = useRef<HTMLDivElement | null>(null);
+const revealRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (revealRef.current) {
-      revealRef.current.classList.add('active');
+useEffect(() => {
+    const currentElement = revealRef.current;
+
+    if (currentElement) {
+        currentElement.classList.add('active');
     }
 
     return () => {
-      if (revealRef.current) {
-        revealRef.current.classList.remove('active');
-      }
+        if (currentElement) {
+            currentElement.classList.remove('active');
+        }
     };
-  }, []);
+}, []);
 
   return (
     <div className="container mx-auto bg-[#F2EFEA] max-w-xl min-h-screen flex flex-col items-center justify-center">

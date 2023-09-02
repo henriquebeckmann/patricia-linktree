@@ -1,6 +1,5 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Html } from 'next/document'
 import { Literata } from 'next/font/google'
 
 const inter = Literata({ subsets: ['latin'] })
