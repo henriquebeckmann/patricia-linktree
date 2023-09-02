@@ -2,10 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  background-image: url(/background.webp);
+
+@font-face {
+    font-family: 'Litera';
+    src: url('/fonts/litera-light.otf');
 }
 
-h2, p {
-    font-weight: 300;
+
+@font-face {
+    font-family: 'Logam';
+    src: url('/fonts/logam-regular.otf');
+}
+
+h2 {
+    font-family: 'Litera';
+}
+
+p {
+    font-family: 'Logam';
+}
+
+@keyframes slideUpFadeIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.reveal.active {
+  animation: slideUpFadeIn 500ms forwards;
 }

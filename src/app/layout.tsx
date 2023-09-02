@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Html } from 'next/document'
 import { Literata } from 'next/font/google'
 
 const inter = Literata({ subsets: ['latin'] })
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-slate-200`}>{children}</body>
+      <body className={`${inter.className} bg-slate-200 overflow-hidden`}>{children}</body>
     </html>
   )
 }
