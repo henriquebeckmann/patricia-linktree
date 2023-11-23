@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Questrial } from 'next/font/google'
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${questrial.className} bg-slate-200 overflow-hidden`}>{children}</body>
+      <Analytics />
     </html>
   )
 }
